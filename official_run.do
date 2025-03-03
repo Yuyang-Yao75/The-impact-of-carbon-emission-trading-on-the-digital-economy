@@ -133,7 +133,7 @@ reg digeco did lnedu lnfdi lnpgdp lnpwage gov i.prov i.year if south == 1, robus
 *异质性检验：北部
 reg digeco did lnedu lnfdi lnpgdp lnpwage gov i.prov i.year if north == 1, robust
 
-*更换时间使ok的
+*更换时间
 reg digeco did lnedu lnfdi lnpgdp lnpwage gov i.prov i.year if year == 2011|year == 2012|year == 2013|year == 2014|year == 2015|year == 2016|year == 2017, robust
 
 *调节效应
@@ -151,8 +151,7 @@ reg digeco did liqdid lnedu lnfdi lnpgdp lnpwage gov i.prov i.year, r
 
 
 
-*更换被解释变量：效果不太好这个
-use "/Users/yaoyuyang/Desktop/保研相关/科研日记/数据/处理数据/official_run_2/diguf.dta", clear
+*更换被解释变量
 
 egen min_digeco = min(digeco)
 egen max_digeco = max(digeco)
