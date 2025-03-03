@@ -1,4 +1,4 @@
-use "/Users/yaoyuyang/Desktop/保研相关/科研日记/数据/处理数据/official_run_2/official_run_2.dta", clear
+use "...", clear
 
 encode prov_name,gen(prov)
 xtset prov year
